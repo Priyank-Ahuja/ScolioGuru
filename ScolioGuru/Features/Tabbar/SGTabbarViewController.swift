@@ -72,11 +72,7 @@ class SGTabbarViewController: UITabBarController {
         self.customTabBarView.layer.cornerRadius = 30
         self.customTabBarView.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
         
-        self.customTabBarView.layer.masksToBounds = false
-        self.customTabBarView.layer.shadowColor = UIColor.black.withAlphaComponent(0.4).cgColor
-        self.customTabBarView.layer.shadowOffset = CGSize(width: -6, height: -8)
-        self.customTabBarView.layer.shadowOpacity = 0.5
-        self.customTabBarView.layer.shadowRadius = 20
+        self.customTabBarView.addShadow(alpha: 0.4, shadowOffset: CGSize(width: -6, height: -8))
         
         self.view.addSubview(customTabBarView)
         self.view.bringSubviewToFront(self.tabBar)

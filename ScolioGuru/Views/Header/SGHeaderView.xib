@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SGHeaderView" customModule="ScolioGuru" customModuleProvider="target">
+            <connections>
+                <outlet property="headerView" destination="wHq-qG-SDh" id="Z9F-Y8-LUX"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="45"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wHq-qG-SDh">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="45"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R8k-7o-Gt4">
+                            <rect key="frame" x="16" y="9.6666666666666643" width="24" height="26"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="26" id="8AR-f9-9ZS"/>
+                                <constraint firstAttribute="width" constant="24" id="SDn-Xw-ugN"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="back-arrow-icon"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RMm-OV-2Gi">
+                            <rect key="frame" x="353" y="9.6666666666666643" width="24" height="26"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="24" id="3GF-n1-iby"/>
+                                <constraint firstAttribute="height" constant="26" id="lwI-mO-Tgf"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="hamburger-icon"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="R8k-7o-Gt4" firstAttribute="leading" secondItem="wHq-qG-SDh" secondAttribute="leading" constant="16" id="S9A-vb-53T"/>
+                        <constraint firstItem="R8k-7o-Gt4" firstAttribute="centerY" secondItem="wHq-qG-SDh" secondAttribute="centerY" id="UfG-iQ-blD"/>
+                        <constraint firstAttribute="trailing" secondItem="RMm-OV-2Gi" secondAttribute="trailing" constant="16" id="Ygj-25-f1f"/>
+                        <constraint firstItem="RMm-OV-2Gi" firstAttribute="centerY" secondItem="wHq-qG-SDh" secondAttribute="centerY" id="oBj-dr-7ih"/>
+                        <constraint firstAttribute="height" constant="45" id="yHl-Ce-HGy"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="wHq-qG-SDh" secondAttribute="bottom" id="DAH-XF-dt1"/>
+                <constraint firstItem="wHq-qG-SDh" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="bNU-L5-z1q"/>
+                <constraint firstAttribute="trailing" secondItem="wHq-qG-SDh" secondAttribute="trailing" id="itX-pI-QOY"/>
+                <constraint firstItem="wHq-qG-SDh" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="wX8-TW-KNf"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="119.84732824427481" y="172.18309859154931"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="back-arrow-icon" width="17.666666030883789" height="16"/>
+        <image name="hamburger-icon" width="20" height="12"/>
+    </resources>
+</document>

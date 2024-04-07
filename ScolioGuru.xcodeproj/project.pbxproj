@@ -7,20 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		38823CE12BB68751000E7282 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38823CE02BB68751000E7282 /* AppCoordinator.swift */; };
+		387DE8112BC279DA00114D02 /* SGButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387DE8102BC279DA00114D02 /* SGButton.swift */; };
+		387DE8132BC27D7B00114D02 /* SGUIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387DE8122BC27D7B00114D02 /* SGUIColorExtension.swift */; };
+		387DE8152BC280AF00114D02 /* SGUIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387DE8142BC280AF00114D02 /* SGUIViewExtension.swift */; };
+		387DE8172BC28C1800114D02 /* SelfDesigningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387DE8162BC28C1800114D02 /* SelfDesigningView.swift */; };
 		3890A4442BB5E2DA00CEFB05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3890A4432BB5E2DA00CEFB05 /* AppDelegate.swift */; };
 		3890A4462BB5E2DA00CEFB05 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3890A4452BB5E2DA00CEFB05 /* SceneDelegate.swift */; };
 		3890A4482BB5E2DA00CEFB05 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3890A4472BB5E2DA00CEFB05 /* ViewController.swift */; };
 		3890A44D2BB5E2DE00CEFB05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3890A44C2BB5E2DE00CEFB05 /* Assets.xcassets */; };
 		3890A4502BB5E2DE00CEFB05 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3890A44E2BB5E2DE00CEFB05 /* LaunchScreen.storyboard */; };
-		38EF3FFF2BB8F4A8004DFD61 /* UIKitExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38EF3FFE2BB8F4A8004DFD61 /* UIKitExtensions.swift */; };
+		38E477542BC2B5F40052890E /* SGCameraViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E477532BC2B5F40052890E /* SGCameraViewModel.swift */; };
+		38E477572BC2B8090052890E /* SGPreImageAnalysisModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E477562BC2B8090052890E /* SGPreImageAnalysisModel.swift */; };
+		38E4775A2BC2BB040052890E /* SGParameterCheckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E477592BC2BB040052890E /* SGParameterCheckView.swift */; };
+		38E4775C2BC2BB130052890E /* SGParameterCheckView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38E4775B2BC2BB130052890E /* SGParameterCheckView.xib */; };
+		38E4775E2BC2BD7F0052890E /* SGParameterCheckViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E4775D2BC2BD7F0052890E /* SGParameterCheckViewModel.swift */; };
+		38E477602BC2CED80052890E /* SGErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E4775F2BC2CED80052890E /* SGErrorModel.swift */; };
+		38E8E58F2BC2757500AFF7C7 /* SGCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E8E58D2BC2757500AFF7C7 /* SGCameraViewController.swift */; };
+		38E8E5902BC2757500AFF7C7 /* SGCameraViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38E8E58E2BC2757500AFF7C7 /* SGCameraViewController.xib */; };
+		38E8E59F2BC2766800AFF7C7 /* SGHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E8E59E2BC2766800AFF7C7 /* SGHeaderView.swift */; };
+		38E8E5A12BC2767C00AFF7C7 /* SGHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38E8E5A02BC2767C00AFF7C7 /* SGHeaderView.xib */; };
+		38EF3FFF2BB8F4A8004DFD61 /* SGUIKitExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38EF3FFE2BB8F4A8004DFD61 /* SGUIKitExtensions.swift */; };
 		38EF40032BBB0F7D004DFD61 /* SGHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38EF40012BBB0F7D004DFD61 /* SGHomeViewController.swift */; };
 		38EF40042BBB0F7D004DFD61 /* SGHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38EF40022BBB0F7D004DFD61 /* SGHomeViewController.xib */; };
 		38EF40072BBB1939004DFD61 /* SGTabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38EF40052BBB1939004DFD61 /* SGTabbarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		38823CE02BB68751000E7282 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		387DE8102BC279DA00114D02 /* SGButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SGButton.swift; sourceTree = "<group>"; };
+		387DE8122BC27D7B00114D02 /* SGUIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SGUIColorExtension.swift; sourceTree = "<group>"; };
+		387DE8142BC280AF00114D02 /* SGUIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SGUIViewExtension.swift; sourceTree = "<group>"; };
+		387DE8162BC28C1800114D02 /* SelfDesigningView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfDesigningView.swift; sourceTree = "<group>"; };
 		3890A4402BB5E2DA00CEFB05 /* ScolioGuru.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScolioGuru.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3890A4432BB5E2DA00CEFB05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3890A4452BB5E2DA00CEFB05 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -28,7 +44,17 @@
 		3890A44C2BB5E2DE00CEFB05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3890A44F2BB5E2DE00CEFB05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3890A4512BB5E2DE00CEFB05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		38EF3FFE2BB8F4A8004DFD61 /* UIKitExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitExtensions.swift; sourceTree = "<group>"; };
+		38E477532BC2B5F40052890E /* SGCameraViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SGCameraViewModel.swift; sourceTree = "<group>"; };
+		38E477562BC2B8090052890E /* SGPreImageAnalysisModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SGPreImageAnalysisModel.swift; sourceTree = "<group>"; };
+		38E477592BC2BB040052890E /* SGParameterCheckView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SGParameterCheckView.swift; sourceTree = "<group>"; };
+		38E4775B2BC2BB130052890E /* SGParameterCheckView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SGParameterCheckView.xib; sourceTree = "<group>"; };
+		38E4775D2BC2BD7F0052890E /* SGParameterCheckViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SGParameterCheckViewModel.swift; sourceTree = "<group>"; };
+		38E4775F2BC2CED80052890E /* SGErrorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SGErrorModel.swift; sourceTree = "<group>"; };
+		38E8E58D2BC2757500AFF7C7 /* SGCameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SGCameraViewController.swift; sourceTree = "<group>"; };
+		38E8E58E2BC2757500AFF7C7 /* SGCameraViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SGCameraViewController.xib; sourceTree = "<group>"; };
+		38E8E59E2BC2766800AFF7C7 /* SGHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SGHeaderView.swift; sourceTree = "<group>"; };
+		38E8E5A02BC2767C00AFF7C7 /* SGHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SGHeaderView.xib; sourceTree = "<group>"; };
+		38EF3FFE2BB8F4A8004DFD61 /* SGUIKitExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SGUIKitExtensions.swift; sourceTree = "<group>"; };
 		38EF40012BBB0F7D004DFD61 /* SGHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SGHomeViewController.swift; sourceTree = "<group>"; };
 		38EF40022BBB0F7D004DFD61 /* SGHomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SGHomeViewController.xib; sourceTree = "<group>"; };
 		38EF40052BBB1939004DFD61 /* SGTabbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SGTabbarViewController.swift; sourceTree = "<group>"; };
@@ -48,6 +74,7 @@
 		38823CE22BB6893F000E7282 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				38E8E58C2BC2745B00AFF7C7 /* Camera */,
 				38EF40002BBB0F67004DFD61 /* Home */,
 				38823CE32BB68948000E7282 /* Tabbar */,
 			);
@@ -81,6 +108,8 @@
 		3890A4422BB5E2DA00CEFB05 /* ScolioGuru */ = {
 			isa = PBXGroup;
 			children = (
+				38E477552BC2B7B60052890E /* Models */,
+				38E8E5912BC275A300AFF7C7 /* Views */,
 				38EF3FFD2BB8F48D004DFD61 /* Extensions */,
 				38823CE22BB6893F000E7282 /* Features */,
 				3890A4432BB5E2DA00CEFB05 /* AppDelegate.swift */,
@@ -89,15 +118,73 @@
 				3890A44C2BB5E2DE00CEFB05 /* Assets.xcassets */,
 				3890A44E2BB5E2DE00CEFB05 /* LaunchScreen.storyboard */,
 				3890A4512BB5E2DE00CEFB05 /* Info.plist */,
-				38823CE02BB68751000E7282 /* AppCoordinator.swift */,
 			);
 			path = ScolioGuru;
+			sourceTree = "<group>";
+		};
+		38E477552BC2B7B60052890E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				38E477562BC2B8090052890E /* SGPreImageAnalysisModel.swift */,
+				38E4775F2BC2CED80052890E /* SGErrorModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		38E477582BC2BACB0052890E /* CheckView */ = {
+			isa = PBXGroup;
+			children = (
+				38E477592BC2BB040052890E /* SGParameterCheckView.swift */,
+				38E4775B2BC2BB130052890E /* SGParameterCheckView.xib */,
+				38E4775D2BC2BD7F0052890E /* SGParameterCheckViewModel.swift */,
+			);
+			path = CheckView;
+			sourceTree = "<group>";
+		};
+		38E8E58C2BC2745B00AFF7C7 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				38E8E58D2BC2757500AFF7C7 /* SGCameraViewController.swift */,
+				38E8E58E2BC2757500AFF7C7 /* SGCameraViewController.xib */,
+				38E477532BC2B5F40052890E /* SGCameraViewModel.swift */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		38E8E5912BC275A300AFF7C7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				38E477582BC2BACB0052890E /* CheckView */,
+				38E8E59D2BC2765600AFF7C7 /* Header */,
+				38E8E5962BC275DD00AFF7C7 /* Buttons */,
+				387DE8162BC28C1800114D02 /* SelfDesigningView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		38E8E5962BC275DD00AFF7C7 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				387DE8102BC279DA00114D02 /* SGButton.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		38E8E59D2BC2765600AFF7C7 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				38E8E59E2BC2766800AFF7C7 /* SGHeaderView.swift */,
+				38E8E5A02BC2767C00AFF7C7 /* SGHeaderView.xib */,
+			);
+			path = Header;
 			sourceTree = "<group>";
 		};
 		38EF3FFD2BB8F48D004DFD61 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				38EF3FFE2BB8F4A8004DFD61 /* UIKitExtensions.swift */,
+				38EF3FFE2BB8F4A8004DFD61 /* SGUIKitExtensions.swift */,
+				387DE8122BC27D7B00114D02 /* SGUIColorExtension.swift */,
+				387DE8142BC280AF00114D02 /* SGUIViewExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -170,7 +257,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3890A4502BB5E2DE00CEFB05 /* LaunchScreen.storyboard in Resources */,
+				38E4775C2BC2BB130052890E /* SGParameterCheckView.xib in Resources */,
+				38E8E5902BC2757500AFF7C7 /* SGCameraViewController.xib in Resources */,
 				3890A44D2BB5E2DE00CEFB05 /* Assets.xcassets in Resources */,
+				38E8E5A12BC2767C00AFF7C7 /* SGHeaderView.xib in Resources */,
 				38EF40042BBB0F7D004DFD61 /* SGHomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -183,12 +273,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				3890A4482BB5E2DA00CEFB05 /* ViewController.swift in Sources */,
-				38EF3FFF2BB8F4A8004DFD61 /* UIKitExtensions.swift in Sources */,
+				387DE8152BC280AF00114D02 /* SGUIViewExtension.swift in Sources */,
+				38EF3FFF2BB8F4A8004DFD61 /* SGUIKitExtensions.swift in Sources */,
+				38E477542BC2B5F40052890E /* SGCameraViewModel.swift in Sources */,
+				38E4775A2BC2BB040052890E /* SGParameterCheckView.swift in Sources */,
+				387DE8172BC28C1800114D02 /* SelfDesigningView.swift in Sources */,
+				387DE8112BC279DA00114D02 /* SGButton.swift in Sources */,
 				38EF40032BBB0F7D004DFD61 /* SGHomeViewController.swift in Sources */,
+				38E8E58F2BC2757500AFF7C7 /* SGCameraViewController.swift in Sources */,
 				3890A4442BB5E2DA00CEFB05 /* AppDelegate.swift in Sources */,
-				38823CE12BB68751000E7282 /* AppCoordinator.swift in Sources */,
+				38E8E59F2BC2766800AFF7C7 /* SGHeaderView.swift in Sources */,
+				387DE8132BC27D7B00114D02 /* SGUIColorExtension.swift in Sources */,
 				3890A4462BB5E2DA00CEFB05 /* SceneDelegate.swift in Sources */,
 				38EF40072BBB1939004DFD61 /* SGTabbarViewController.swift in Sources */,
+				38E477572BC2B8090052890E /* SGPreImageAnalysisModel.swift in Sources */,
+				38E477602BC2CED80052890E /* SGErrorModel.swift in Sources */,
+				38E4775E2BC2BD7F0052890E /* SGParameterCheckViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
