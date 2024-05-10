@@ -11,6 +11,28 @@ final class SGCameraViewModel {
     
     var surroundingModel: [SGPreImageAnalysisModel] = [SGPreImageAnalysisModel(title: "Ambient Lighting", isEnabled: false), SGPreImageAnalysisModel(title: "Clear Background", isEnabled: false)]
     
+    var cameraViews = [0: SGCameraView(title: "Side View - Turn Left", imageName: "left-view", description: "Relax your posture and try to be comfortable."),
+                       1: SGCameraView(title: "Side View - Turn Right", imageName: "right-view", description: "Relax your posture and try to be comfortable."),
+                       2: SGCameraView(title: "Front View", imageName: "front-view", description: "Relax your posture and try to be comfortable. "),
+                       3: SGCameraView(title: "Back View", imageName: "back-view", description: "Relax your posture and try to be comfortable. "),
+                       4: SGCameraView(title: "Adams Bend Test", imageName: "adam-bend-test", description: "Follow the image or the audio to do this test. Hold your palms together in front of you and then bend towards your knee. Keep your arms straight at all times."),
+                       5: SGCameraView(title: "Adams Bend Test", imageName: "adam-front-view", description: "Front View"),
+                       6: SGCameraView(title: "Adams Bend Test", imageName: "adam-side-view", description: "Side View")]
+    
+    var currentViewNumber = 0 {
+        didSet {
+            if currentViewNumber == 7 {
+                goToAnalysis = true
+            } else {
+                goToAnalysis = false
+            }
+        }
+    }
+    
+    var state: SGCameraState = .preImage
+    
+    var goToAnalysis: Bool = false
+    
     func getParamsError(of cgImage: CGImage) -> SGErrorModel {
         if !calculateAverageBrightness(of: cgImage) {
             return SGErrorModel(title: "Get better lighting", message: "Pleas take the picture in better lighting conditions.", isError: true)
@@ -43,7 +65,7 @@ final class SGCameraViewModel {
         let averageBrightness = brightnessSum / totalPixels / 255.0 // Normalize to [0,1]
         
         updateModel(isEnabled: true, title: "Ambient Lighting")
-        if averageBrightness > 0.1 {
+        if averageBrightness > 0.4 {
             updateModel(isEnabled: true, title: "Ambient Lighting")
             return true
         } else {
@@ -79,7 +101,7 @@ final class SGCameraViewModel {
         
         // Determine if variance is below a threshold (indicating uniformity)
         // This threshold would need to be determined based on experimentation
-        let threshold: CGFloat = 0.05 // Example threshold
+        let threshold: CGFloat = 15000.0 // Example threshold
                 
         updateModel(isEnabled: colorVariance < threshold, title: "Clear Background")
         return colorVariance < threshold
@@ -97,5 +119,13 @@ final class SGCameraViewModel {
     surroundingModel = [SGPreImageAnalysisModel(title: "Ambient Lighting", isEnabled: false), SGPreImageAnalysisModel(title: "Clear Background", isEnabled: false)]
     }
 
-
+    func getCurrentView() -> SGCameraView? {
+        return cameraViews[currentViewNumber]
+    }
+    
+    func updateCurrentView() {
+        if currentViewNumber <= 6 {
+            currentViewNumber += 1
+        }
+    }
 }

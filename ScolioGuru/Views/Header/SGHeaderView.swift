@@ -11,10 +11,15 @@ class SGHeaderView: SelfDesigningView {
 
     @IBOutlet weak var headerView: UIView!
     
+    var backButtonClosure: VoidClosure?
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        self.addShadow()
+        //self.addShadow()
     }
 
+    @IBAction func backButtonAction(_ sender: Any) {
+        self.backButtonClosure?()
+    }
 }

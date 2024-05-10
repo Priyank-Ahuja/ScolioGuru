@@ -7,11 +7,16 @@
 
 import UIKit
 import AVKit
+import CoreML
 
 final class SGHomeViewController: UIViewController {
     
+    @IBOutlet weak var headerBackgroundView: UIView!
     @IBOutlet weak var headerView: SGHeaderView!
     @IBOutlet weak var letsStartButton: UIButton!
+    
+    var model: MySpinalNetModel?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupInterface()
@@ -20,9 +25,9 @@ final class SGHomeViewController: UIViewController {
     
     private func setupInterface() {
         self.navigationController?.isNavigationBarHidden = true
+        self.tabBarController?.tabBar.isHidden = false
         letsStartButton.setTitle("Let's Start", for: .normal)
-    
-        self.headerView.addShadow()
+        self.headerBackgroundView.addShadow()
     }
     
     @IBAction func letsStartButtonAction(_ sender: Any) {
@@ -31,8 +36,13 @@ final class SGHomeViewController: UIViewController {
                 //access granted
                 DispatchQueue.main.async {
                     let model = SGCameraViewModel()
-                    let vc = SGCameraViewController(model: model)
-                    self.navigationController?.pushViewController(vc, animated: true)
+                    let cameraViewController = SGCameraViewController(model: model)
+                    cameraViewController.backButtonClosure = { [weak self] in
+                        guard let self else { return }
+                        self.navigationController?.popViewController(animated: true)
+                        self.tabBarController?.tabBar.isHidden = false
+                    }
+                    self.navigationController?.pushViewController(cameraViewController, animated: true)
                 }
             } else {
                 

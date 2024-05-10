@@ -68,7 +68,7 @@ class SGTabbarViewController: UITabBarController {
     private func addCustomTabBarView() {
         self.customTabBarView.frame = tabBar.frame
         
-        self.customTabBarView.backgroundColor = .systemFill
+        self.customTabBarView.backgroundColor = .clear
         self.customTabBarView.layer.cornerRadius = 30
         self.customTabBarView.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
         

@@ -11,11 +11,16 @@
 		387DE8132BC27D7B00114D02 /* SGUIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387DE8122BC27D7B00114D02 /* SGUIColorExtension.swift */; };
 		387DE8152BC280AF00114D02 /* SGUIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387DE8142BC280AF00114D02 /* SGUIViewExtension.swift */; };
 		387DE8172BC28C1800114D02 /* SelfDesigningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387DE8162BC28C1800114D02 /* SelfDesigningView.swift */; };
+		388442BE2BC36D880076C7B3 /* SGCameraState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388442BD2BC36D880076C7B3 /* SGCameraState.swift */; };
+		388442C02BC36DB30076C7B3 /* SGCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388442BF2BC36DB30076C7B3 /* SGCameraView.swift */; };
+		388442C32BC3D1A60076C7B3 /* SGConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388442C22BC3D1A60076C7B3 /* SGConstants.swift */; };
+		388442C52BC3DD540076C7B3 /* SGCommonTypeAlias.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388442C42BC3DD540076C7B3 /* SGCommonTypeAlias.swift */; };
 		3890A4442BB5E2DA00CEFB05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3890A4432BB5E2DA00CEFB05 /* AppDelegate.swift */; };
 		3890A4462BB5E2DA00CEFB05 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3890A4452BB5E2DA00CEFB05 /* SceneDelegate.swift */; };
 		3890A4482BB5E2DA00CEFB05 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3890A4472BB5E2DA00CEFB05 /* ViewController.swift */; };
 		3890A44D2BB5E2DE00CEFB05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3890A44C2BB5E2DE00CEFB05 /* Assets.xcassets */; };
 		3890A4502BB5E2DE00CEFB05 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3890A44E2BB5E2DE00CEFB05 /* LaunchScreen.storyboard */; };
+		38DD5C1F2BD9F02C00267909 /* MySpinalNetModel.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = 38DD5C1E2BD9F02A00267909 /* MySpinalNetModel.mlpackage */; };
 		38E477542BC2B5F40052890E /* SGCameraViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E477532BC2B5F40052890E /* SGCameraViewModel.swift */; };
 		38E477572BC2B8090052890E /* SGPreImageAnalysisModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E477562BC2B8090052890E /* SGPreImageAnalysisModel.swift */; };
 		38E4775A2BC2BB040052890E /* SGParameterCheckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E477592BC2BB040052890E /* SGParameterCheckView.swift */; };
@@ -37,6 +42,10 @@
 		387DE8122BC27D7B00114D02 /* SGUIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SGUIColorExtension.swift; sourceTree = "<group>"; };
 		387DE8142BC280AF00114D02 /* SGUIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SGUIViewExtension.swift; sourceTree = "<group>"; };
 		387DE8162BC28C1800114D02 /* SelfDesigningView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfDesigningView.swift; sourceTree = "<group>"; };
+		388442BD2BC36D880076C7B3 /* SGCameraState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SGCameraState.swift; sourceTree = "<group>"; };
+		388442BF2BC36DB30076C7B3 /* SGCameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SGCameraView.swift; sourceTree = "<group>"; };
+		388442C22BC3D1A60076C7B3 /* SGConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SGConstants.swift; sourceTree = "<group>"; };
+		388442C42BC3DD540076C7B3 /* SGCommonTypeAlias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SGCommonTypeAlias.swift; sourceTree = "<group>"; };
 		3890A4402BB5E2DA00CEFB05 /* ScolioGuru.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScolioGuru.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3890A4432BB5E2DA00CEFB05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3890A4452BB5E2DA00CEFB05 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -44,6 +53,7 @@
 		3890A44C2BB5E2DE00CEFB05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3890A44F2BB5E2DE00CEFB05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3890A4512BB5E2DE00CEFB05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		38DD5C1E2BD9F02A00267909 /* MySpinalNetModel.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; path = MySpinalNetModel.mlpackage; sourceTree = "<group>"; };
 		38E477532BC2B5F40052890E /* SGCameraViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SGCameraViewModel.swift; sourceTree = "<group>"; };
 		38E477562BC2B8090052890E /* SGPreImageAnalysisModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SGPreImageAnalysisModel.swift; sourceTree = "<group>"; };
 		38E477592BC2BB040052890E /* SGParameterCheckView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SGParameterCheckView.swift; sourceTree = "<group>"; };
@@ -89,6 +99,15 @@
 			path = Tabbar;
 			sourceTree = "<group>";
 		};
+		388442C12BC3D1960076C7B3 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				388442C22BC3D1A60076C7B3 /* SGConstants.swift */,
+				388442C42BC3DD540076C7B3 /* SGCommonTypeAlias.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
 		3890A4372BB5E2DA00CEFB05 = {
 			isa = PBXGroup;
 			children = (
@@ -108,6 +127,8 @@
 		3890A4422BB5E2DA00CEFB05 /* ScolioGuru */ = {
 			isa = PBXGroup;
 			children = (
+				38DD5C1E2BD9F02A00267909 /* MySpinalNetModel.mlpackage */,
+				388442C12BC3D1960076C7B3 /* Helper */,
 				38E477552BC2B7B60052890E /* Models */,
 				38E8E5912BC275A300AFF7C7 /* Views */,
 				38EF3FFD2BB8F48D004DFD61 /* Extensions */,
@@ -127,6 +148,8 @@
 			children = (
 				38E477562BC2B8090052890E /* SGPreImageAnalysisModel.swift */,
 				38E4775F2BC2CED80052890E /* SGErrorModel.swift */,
+				388442BD2BC36D880076C7B3 /* SGCameraState.swift */,
+				388442BF2BC36DB30076C7B3 /* SGCameraView.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -274,10 +297,13 @@
 			files = (
 				3890A4482BB5E2DA00CEFB05 /* ViewController.swift in Sources */,
 				387DE8152BC280AF00114D02 /* SGUIViewExtension.swift in Sources */,
+				38DD5C1F2BD9F02C00267909 /* MySpinalNetModel.mlpackage in Sources */,
 				38EF3FFF2BB8F4A8004DFD61 /* SGUIKitExtensions.swift in Sources */,
+				388442C32BC3D1A60076C7B3 /* SGConstants.swift in Sources */,
 				38E477542BC2B5F40052890E /* SGCameraViewModel.swift in Sources */,
 				38E4775A2BC2BB040052890E /* SGParameterCheckView.swift in Sources */,
 				387DE8172BC28C1800114D02 /* SelfDesigningView.swift in Sources */,
+				388442BE2BC36D880076C7B3 /* SGCameraState.swift in Sources */,
 				387DE8112BC279DA00114D02 /* SGButton.swift in Sources */,
 				38EF40032BBB0F7D004DFD61 /* SGHomeViewController.swift in Sources */,
 				38E8E58F2BC2757500AFF7C7 /* SGCameraViewController.swift in Sources */,
@@ -286,7 +312,9 @@
 				387DE8132BC27D7B00114D02 /* SGUIColorExtension.swift in Sources */,
 				3890A4462BB5E2DA00CEFB05 /* SceneDelegate.swift in Sources */,
 				38EF40072BBB1939004DFD61 /* SGTabbarViewController.swift in Sources */,
+				388442C02BC36DB30076C7B3 /* SGCameraView.swift in Sources */,
 				38E477572BC2B8090052890E /* SGPreImageAnalysisModel.swift in Sources */,
+				388442C52BC3DD540076C7B3 /* SGCommonTypeAlias.swift in Sources */,
 				38E477602BC2CED80052890E /* SGErrorModel.swift in Sources */,
 				38E4775E2BC2BD7F0052890E /* SGParameterCheckViewModel.swift in Sources */,
 			);
