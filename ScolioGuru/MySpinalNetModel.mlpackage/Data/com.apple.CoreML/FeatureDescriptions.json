@@ -1,0 +1,21 @@
+{
+  "Outputs" : {
+    "var_701" : {
+      "MLFeatureShortDescription" : "--"
+    },
+    "var_718" : {
+      "MLFeatureShortDescription" : "--"
+    },
+    "var_735" : {
+      "MLFeatureShortDescription" : "--"
+    }
+  },
+  "Inputs" : {
+    "x" : {
+      "MLFeatureShortDescription" : "--"
+    }
+  },
+  "TrainingInputs" : {
+
+  }
+}

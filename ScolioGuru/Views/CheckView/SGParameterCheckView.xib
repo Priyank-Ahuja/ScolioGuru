@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SGParameterCheckView" customModule="ScolioGuru" customModuleProvider="target">
+            <connections>
+                <outlet property="imageView" destination="8U5-D9-unF" id="rSd-sF-nCu"/>
+                <outlet property="titleLabel" destination="4SP-To-e2X" id="2XK-Bw-CEg"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="205" height="46"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="NtQ-35-u7J">
+                    <rect key="frame" x="0.0" y="0.0" width="205" height="46"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="check-no" translatesAutoresizingMaskIntoConstraints="NO" id="8U5-D9-unF">
+                            <rect key="frame" x="0.0" y="0.0" width="24" height="24"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="24" id="1xU-fO-bMa"/>
+                                <constraint firstAttribute="width" constant="24" id="qK0-cs-VG6"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ambient Lighting" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4SP-To-e2X">
+                            <rect key="frame" x="34" y="0.0" width="171" height="19.333333333333332"/>
+                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="NtQ-35-u7J" secondAttribute="bottom" id="0Lh-NA-PYL"/>
+                <constraint firstItem="NtQ-35-u7J" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Pw5-io-u3C"/>
+                <constraint firstItem="NtQ-35-u7J" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="afb-XM-WIj"/>
+                <constraint firstAttribute="trailing" secondItem="NtQ-35-u7J" secondAttribute="trailing" id="jZV-2Z-cfI"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-61.832061068702288" y="248.59154929577466"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="check-no" width="24" height="24"/>
+    </resources>
+</document>

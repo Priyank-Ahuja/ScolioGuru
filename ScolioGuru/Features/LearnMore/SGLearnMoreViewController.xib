@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SGLearnMoreViewController" customModule="ScolioGuru" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="BGp-cL-YAK" id="vBu-4U-mdD"/>
+                <outlet property="headerBackgroundView" destination="tBB-6v-LB7" id="9fO-bP-TKo"/>
+                <outlet property="headerView" destination="5wT-Em-ZtZ" id="4Fx-qA-Vks"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="BGp-cL-YAK">
+                    <rect key="frame" x="0.0" y="94" width="393" height="758"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="iX1-Bj-6ED">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="zzC-YP-B09"/>
+                        <outlet property="delegate" destination="-1" id="u0h-lh-TxK"/>
+                    </connections>
+                </collectionView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tBB-6v-LB7">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="94"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5wT-Em-ZtZ" customClass="SGHeaderView" customModule="ScolioGuru" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="49" width="393" height="45"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="45" id="BmG-cT-ylB"/>
+                        <constraint firstAttribute="height" constant="45" id="vYj-aI-bmi"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="BGp-cL-YAK" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="BEw-zz-2ix"/>
+                <constraint firstAttribute="bottom" secondItem="BGp-cL-YAK" secondAttribute="bottom" id="O5S-BS-bVR"/>
+                <constraint firstItem="tBB-6v-LB7" firstAttribute="bottom" secondItem="5wT-Em-ZtZ" secondAttribute="bottom" id="OBA-Gl-aMZ"/>
+                <constraint firstItem="BGp-cL-YAK" firstAttribute="top" secondItem="tBB-6v-LB7" secondAttribute="bottom" id="RFP-Nk-OWe"/>
+                <constraint firstItem="tBB-6v-LB7" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="W4y-iW-rfo"/>
+                <constraint firstAttribute="trailing" secondItem="5wT-Em-ZtZ" secondAttribute="trailing" id="ZZA-Yi-PFD"/>
+                <constraint firstItem="5wT-Em-ZtZ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="eZM-wJ-aNe"/>
+                <constraint firstAttribute="trailing" secondItem="BGp-cL-YAK" secondAttribute="trailing" id="gA4-2x-X0R"/>
+                <constraint firstItem="tBB-6v-LB7" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="i1D-YA-0qd"/>
+                <constraint firstAttribute="trailing" secondItem="tBB-6v-LB7" secondAttribute="trailing" id="kQT-iA-tXw"/>
+                <constraint firstItem="5wT-Em-ZtZ" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="-10" id="sHn-q2-Uo0"/>
+            </constraints>
+            <point key="canvasLocation" x="-19" y="20"/>
+        </view>
+    </objects>
+</document>

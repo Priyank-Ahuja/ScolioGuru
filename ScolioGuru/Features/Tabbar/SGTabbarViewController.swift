@@ -11,14 +11,6 @@ class SGTabbarViewController: UITabBarController {
     
     var customTabBarView = UIView(frame: .zero)
     
-    //    override func viewDidLoad() {
-    //        super.viewDidLoad()
-    //        setupTabs()
-    //
-    //        self.tabBar.barTintColor = .white
-    //        self.tabBar.tintColor = .black
-    //    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
        
@@ -68,25 +60,29 @@ class SGTabbarViewController: UITabBarController {
     private func addCustomTabBarView() {
         self.customTabBarView.frame = tabBar.frame
         
-        self.customTabBarView.backgroundColor = .systemFill
+        self.customTabBarView.backgroundColor = .clear
         self.customTabBarView.layer.cornerRadius = 30
         self.customTabBarView.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
         
-        self.customTabBarView.layer.masksToBounds = false
-        self.customTabBarView.layer.shadowColor = UIColor.black.withAlphaComponent(0.4).cgColor
-        self.customTabBarView.layer.shadowOffset = CGSize(width: -6, height: -8)
-        self.customTabBarView.layer.shadowOpacity = 0.5
-        self.customTabBarView.layer.shadowRadius = 20
+        self.customTabBarView.addShadow(alpha: 0.4, shadowOffset: CGSize(width: -6, height: -8))
         
         self.view.addSubview(customTabBarView)
         self.view.bringSubviewToFront(self.tabBar)
     }
     
     private func setupTabs () {
-        let home = self.createNav(with: "Home", and: UIImage(named: "home-tab-icon"), vc: SGHomeViewController())
+        let homeModel = SGHomeViewModel()
+        let resourcesModel = SGLearnMoreViewModel()
+        let physioModel = SGPhysioViewModel()
+        let forumsModel = SGForumsViewModel()
         
+        let home = self.createNav(with: "Home", and: UIImage(named: "home-tab-icon"), vc: SGHomeViewController(model: homeModel))
+        let resources = self.createNav(with: "Resources", and: UIImage(named: "resources-tab-icon"), vc: SGLearnMoreViewController(model: resourcesModel))
+        let physio = self.createNav(with: "Physio", and: UIImage(named: "physio-tab-icon"), vc: SGPhysioViewController(model: physioModel))
+        let forums = self.createNav(with: "Forums", and: UIImage(named: "forums-tab-icon"), vc: SGForumsViewController(model: forumsModel))
         
-        self.setViewControllers ([home], animated: true)
+        self.setViewControllers ([resources, physio, home, forums], animated: true)
+        self.selectedIndex = 2
     }
     
     private
