@@ -11,14 +11,6 @@ class SGTabbarViewController: UITabBarController {
     
     var customTabBarView = UIView(frame: .zero)
     
-    //    override func viewDidLoad() {
-    //        super.viewDidLoad()
-    //        setupTabs()
-    //
-    //        self.tabBar.barTintColor = .white
-    //        self.tabBar.tintColor = .black
-    //    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
        
@@ -90,6 +82,7 @@ class SGTabbarViewController: UITabBarController {
         let forums = self.createNav(with: "Forums", and: UIImage(named: "forums-tab-icon"), vc: SGForumsViewController(model: forumsModel))
         
         self.setViewControllers ([resources, physio, home, forums], animated: true)
+        self.selectedIndex = 2
     }
     
     private
