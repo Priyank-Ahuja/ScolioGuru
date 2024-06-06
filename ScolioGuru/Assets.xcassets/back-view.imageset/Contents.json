@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "Group 1.png",
+      "filename" : "Layer_1.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "Group 1-2.png",
+      "filename" : "Layer_1@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "Group 1-3.png",
+      "filename" : "Layer_1@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

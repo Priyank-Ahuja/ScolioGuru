@@ -7,6 +7,7 @@
 
 import UIKit
 import SensorKit
+import CoreML
 
 final class SGCameraViewController: UIViewController, UINavigationControllerDelegate {
     @IBOutlet weak var timerLabel: UILabel!
@@ -30,10 +31,15 @@ final class SGCameraViewController: UIViewController, UINavigationControllerDele
     
     let previewLayer = AVCaptureVideoPreviewLayer()
     let model: SGCameraViewModel
+    //let spinalModel: MySpinalNetModel
    
     init(model: SGCameraViewModel) {
         self.model = model
         super.init(nibName: nil, bundle: nil)
+        
+        //let model = MLModel(contentsOf: URL(filePath: <#T##String#>))
+      
+      
     }
     
     required init?(coder: NSCoder) {
@@ -51,8 +57,21 @@ final class SGCameraViewController: UIViewController, UINavigationControllerDele
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        
         previewLayer.frame = view.bounds
+    }
+    
+    private func getModelPrediction(from image: UIImage) -> MySpinalNetModelOutput? {
+        guard let imageBuffer: CVPixelBuffer = model.imageToCVPixelBuffer(from: image) else { return nil }
+        
+        do {
+            let config = MLModelConfiguration()
+            let model = try MySpinalNetModel(configuration: config)
+            let prediction = try model.prediction(x: imageBuffer)
+            return prediction
+        } catch {
+            
+        }
+        return nil
     }
     
     private func setupInterface() {
@@ -305,8 +324,9 @@ extension SGCameraViewController: AVCapturePhotoCaptureDelegate {
         }
         
         session?.stopRunning()
+        guard let imageSize = model.resizeImage(image: image, targetSize: CGSize(width: 512, height: 512)) else {return}
+        self.imageView = UIImageView(image: imageSize)
         
-        self.imageView = UIImageView(image: image)
         self.imageView?.contentMode = .scaleAspectFill
         self.imageView?.frame = view.bounds
         guard let imageView else { return }
@@ -324,29 +344,48 @@ extension SGCameraViewController: AVCapturePhotoCaptureDelegate {
             }
         case .manual:
             setupImagePreview()
+            
+            let resultPrediction = self.getModelPrediction(from: imageSize)
+            print("model prediction \(String(describing: resultPrediction))")
         case .auto:
-            //model.currentViewNumber += 1
-            //setupCameraState()
             setupImagePreview()
+            
+            let resultPrediction = self.getModelPrediction(from: imageSize)
+            print("model prediction \(String(describing: resultPrediction))")
         }
     }
     
 }
 
 extension SGCameraViewController: UIImagePickerControllerDelegate {
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        picker.dismiss(animated: true, completion: nil)
+        
+        if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
+            imageView?.image = image
+            
+            let resultPrediction = self.getModelPrediction(from: image)
+            print("model prediction \(String(describing: resultPrediction))")
+        }
+    }
+    
     func imagePickerController(picker: UIImagePickerController!, didFinishPickingImage image: UIImage!, editingInfo: NSDictionary!){
         self.dismiss(animated: true, completion: { () -> Void in
             
         })
         session?.stopRunning()
         
-        self.imageView = UIImageView(image: image)
+        let resultPrediction = self.getModelPrediction(from: image)
+        print("model prediction \(String(describing: resultPrediction))")
+        
         self.imageView?.contentMode = .scaleAspectFill
         self.imageView?.frame = view.bounds
         guard let imageView else { return }
         view.addSubview(imageView)
         view.sendSubviewToBack(imageView)
-        //imageView.image = image
     }
-    
 }
+
+
+
+

@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		381ACD392C113BA10097E267 /* SGUIImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381ACD382C113BA10097E267 /* SGUIImageExtensions.swift */; };
+		382C2B5B2C09D09D0089AFBB /* SGHealthCheckSurveyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382C2B592C09D09D0089AFBB /* SGHealthCheckSurveyViewController.swift */; };
+		382C2B5C2C09D09D0089AFBB /* SGHealthCheckSurveyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 382C2B5A2C09D09D0089AFBB /* SGHealthCheckSurveyViewController.xib */; };
+		382C2B602C09D1C60089AFBB /* SGSurveyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382C2B5E2C09D1C60089AFBB /* SGSurveyTableViewCell.swift */; };
+		382C2B612C09D1C60089AFBB /* SGSurveyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 382C2B5F2C09D1C60089AFBB /* SGSurveyTableViewCell.xib */; };
+		382C2B662C09D2EB0089AFBB /* SGSurveyOptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382C2B642C09D2EB0089AFBB /* SGSurveyOptionTableViewCell.swift */; };
+		382C2B672C09D2EB0089AFBB /* SGSurveyOptionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 382C2B652C09D2EB0089AFBB /* SGSurveyOptionTableViewCell.xib */; };
+		382C2B6B2C09D8510089AFBB /* SGCongratsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382C2B692C09D8510089AFBB /* SGCongratsTableViewCell.swift */; };
+		382C2B6C2C09D8510089AFBB /* SGCongratsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 382C2B6A2C09D8510089AFBB /* SGCongratsTableViewCell.xib */; };
+		382C2B6E2C09DA0D0089AFBB /* SGHealthCheckSurveyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382C2B6D2C09DA0D0089AFBB /* SGHealthCheckSurveyViewModel.swift */; };
 		387DE8112BC279DA00114D02 /* SGButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387DE8102BC279DA00114D02 /* SGButton.swift */; };
 		387DE8132BC27D7B00114D02 /* SGUIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387DE8122BC27D7B00114D02 /* SGUIColorExtension.swift */; };
 		387DE8152BC280AF00114D02 /* SGUIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387DE8142BC280AF00114D02 /* SGUIViewExtension.swift */; };
@@ -20,6 +30,30 @@
 		3890A4482BB5E2DA00CEFB05 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3890A4472BB5E2DA00CEFB05 /* ViewController.swift */; };
 		3890A44D2BB5E2DE00CEFB05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3890A44C2BB5E2DE00CEFB05 /* Assets.xcassets */; };
 		3890A4502BB5E2DE00CEFB05 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3890A44E2BB5E2DE00CEFB05 /* LaunchScreen.storyboard */; };
+		38A0BDA82C0A02BD00107041 /* SGHomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A0BDA72C0A02BD00107041 /* SGHomeViewModel.swift */; };
+		38A0BDAA2C0A0A1D00107041 /* SGTabModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A0BDA92C0A0A1D00107041 /* SGTabModel.swift */; };
+		38A0BDAE2C0A0D6E00107041 /* SGLearnMoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A0BDAC2C0A0D6E00107041 /* SGLearnMoreViewController.swift */; };
+		38A0BDAF2C0A0D6E00107041 /* SGLearnMoreViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38A0BDAD2C0A0D6E00107041 /* SGLearnMoreViewController.xib */; };
+		38A0BDB12C0A0E3A00107041 /* SGLearnMoreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A0BDB02C0A0E3A00107041 /* SGLearnMoreViewModel.swift */; };
+		38A0BDB62C0A0F9500107041 /* SGVideoBannerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A0BDB42C0A0F9500107041 /* SGVideoBannerCollectionViewCell.swift */; };
+		38A0BDB72C0A0F9500107041 /* SGVideoBannerCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38A0BDB52C0A0F9500107041 /* SGVideoBannerCollectionViewCell.xib */; };
+		38A0BDBB2C0A125F00107041 /* SGVideoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A0BDB92C0A125F00107041 /* SGVideoCollectionViewCell.swift */; };
+		38A0BDBC2C0A125F00107041 /* SGVideoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38A0BDBA2C0A125F00107041 /* SGVideoCollectionViewCell.xib */; };
+		38A0BDC02C0A15ED00107041 /* SGPhysioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A0BDBE2C0A15ED00107041 /* SGPhysioViewController.swift */; };
+		38A0BDC12C0A15ED00107041 /* SGPhysioViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38A0BDBF2C0A15ED00107041 /* SGPhysioViewController.xib */; };
+		38A0BDC32C0A16B800107041 /* SGPhysioViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A0BDC22C0A16B800107041 /* SGPhysioViewModel.swift */; };
+		38A0BDC72C0A1A7500107041 /* SGForumsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A0BDC52C0A1A7500107041 /* SGForumsViewController.swift */; };
+		38A0BDC82C0A1A7500107041 /* SGForumsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38A0BDC62C0A1A7500107041 /* SGForumsViewController.xib */; };
+		38A0BDCA2C0A1B0300107041 /* SGForumsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A0BDC92C0A1B0300107041 /* SGForumsViewModel.swift */; };
+		38A0BDCC2C0A1B3500107041 /* SGForumsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A0BDCB2C0A1B3500107041 /* SGForumsModel.swift */; };
+		38C4367B2C09F79B00B4D286 /* SGHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C436792C09F79B00B4D286 /* SGHomeViewController.swift */; };
+		38C4367C2C09F79C00B4D286 /* SGHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38C4367A2C09F79B00B4D286 /* SGHomeViewController.xib */; };
+		38C4367F2C09F82900B4D286 /* SGTitleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C4367D2C09F82900B4D286 /* SGTitleCollectionViewCell.swift */; };
+		38C436802C09F82900B4D286 /* SGTitleCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38C4367E2C09F82900B4D286 /* SGTitleCollectionViewCell.xib */; };
+		38C436862C09F99900B4D286 /* SGSpinalCheckCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C436842C09F99900B4D286 /* SGSpinalCheckCollectionViewCell.swift */; };
+		38C436872C09F99900B4D286 /* SGSpinalCheckCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38C436852C09F99900B4D286 /* SGSpinalCheckCollectionViewCell.xib */; };
+		38C4368B2C09FB9F00B4D286 /* SGLearnMoreCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C436892C09FB9F00B4D286 /* SGLearnMoreCollectionViewCell.swift */; };
+		38C4368C2C09FB9F00B4D286 /* SGLearnMoreCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38C4368A2C09FB9F00B4D286 /* SGLearnMoreCollectionViewCell.xib */; };
 		38DD5C1F2BD9F02C00267909 /* MySpinalNetModel.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = 38DD5C1E2BD9F02A00267909 /* MySpinalNetModel.mlpackage */; };
 		38E477542BC2B5F40052890E /* SGCameraViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E477532BC2B5F40052890E /* SGCameraViewModel.swift */; };
 		38E477572BC2B8090052890E /* SGPreImageAnalysisModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E477562BC2B8090052890E /* SGPreImageAnalysisModel.swift */; };
@@ -32,12 +66,24 @@
 		38E8E59F2BC2766800AFF7C7 /* SGHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E8E59E2BC2766800AFF7C7 /* SGHeaderView.swift */; };
 		38E8E5A12BC2767C00AFF7C7 /* SGHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38E8E5A02BC2767C00AFF7C7 /* SGHeaderView.xib */; };
 		38EF3FFF2BB8F4A8004DFD61 /* SGUIKitExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38EF3FFE2BB8F4A8004DFD61 /* SGUIKitExtensions.swift */; };
-		38EF40032BBB0F7D004DFD61 /* SGHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38EF40012BBB0F7D004DFD61 /* SGHomeViewController.swift */; };
-		38EF40042BBB0F7D004DFD61 /* SGHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38EF40022BBB0F7D004DFD61 /* SGHomeViewController.xib */; };
+		38EF40032BBB0F7D004DFD61 /* SGHealthCheckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38EF40012BBB0F7D004DFD61 /* SGHealthCheckViewController.swift */; };
+		38EF40042BBB0F7D004DFD61 /* SGHealthCheckViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38EF40022BBB0F7D004DFD61 /* SGHealthCheckViewController.xib */; };
 		38EF40072BBB1939004DFD61 /* SGTabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38EF40052BBB1939004DFD61 /* SGTabbarViewController.swift */; };
+		735A53C6324BF1CA423F9ACE /* Pods_ScolioGuru.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 895D216ECE52EDC57501F864 /* Pods_ScolioGuru.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A23C096874A9488137EE1C8 /* Pods-ScolioGuru.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScolioGuru.debug.xcconfig"; path = "Target Support Files/Pods-ScolioGuru/Pods-ScolioGuru.debug.xcconfig"; sourceTree = "<group>"; };
+		381ACD382C113BA10097E267 /* SGUIImageExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SGUIImageExtensions.swift; sourceTree = "<group>"; };
+		382C2B592C09D09D0089AFBB /* SGHealthCheckSurveyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SGHealthCheckSurveyViewController.swift; sourceTree = "<group>"; };
+		382C2B5A2C09D09D0089AFBB /* SGHealthCheckSurveyViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SGHealthCheckSurveyViewController.xib; sourceTree = "<group>"; };
+		382C2B5E2C09D1C60089AFBB /* SGSurveyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SGSurveyTableViewCell.swift; sourceTree = "<group>"; };
+		382C2B5F2C09D1C60089AFBB /* SGSurveyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SGSurveyTableViewCell.xib; sourceTree = "<group>"; };
+		382C2B642C09D2EB0089AFBB /* SGSurveyOptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SGSurveyOptionTableViewCell.swift; sourceTree = "<group>"; };
+		382C2B652C09D2EB0089AFBB /* SGSurveyOptionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SGSurveyOptionTableViewCell.xib; sourceTree = "<group>"; };
+		382C2B692C09D8510089AFBB /* SGCongratsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SGCongratsTableViewCell.swift; sourceTree = "<group>"; };
+		382C2B6A2C09D8510089AFBB /* SGCongratsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SGCongratsTableViewCell.xib; sourceTree = "<group>"; };
+		382C2B6D2C09DA0D0089AFBB /* SGHealthCheckSurveyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SGHealthCheckSurveyViewModel.swift; sourceTree = "<group>"; };
 		387DE8102BC279DA00114D02 /* SGButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SGButton.swift; sourceTree = "<group>"; };
 		387DE8122BC27D7B00114D02 /* SGUIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SGUIColorExtension.swift; sourceTree = "<group>"; };
 		387DE8142BC280AF00114D02 /* SGUIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SGUIViewExtension.swift; sourceTree = "<group>"; };
@@ -53,6 +99,30 @@
 		3890A44C2BB5E2DE00CEFB05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3890A44F2BB5E2DE00CEFB05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3890A4512BB5E2DE00CEFB05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		38A0BDA72C0A02BD00107041 /* SGHomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SGHomeViewModel.swift; sourceTree = "<group>"; };
+		38A0BDA92C0A0A1D00107041 /* SGTabModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SGTabModel.swift; sourceTree = "<group>"; };
+		38A0BDAC2C0A0D6E00107041 /* SGLearnMoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SGLearnMoreViewController.swift; sourceTree = "<group>"; };
+		38A0BDAD2C0A0D6E00107041 /* SGLearnMoreViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SGLearnMoreViewController.xib; sourceTree = "<group>"; };
+		38A0BDB02C0A0E3A00107041 /* SGLearnMoreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SGLearnMoreViewModel.swift; sourceTree = "<group>"; };
+		38A0BDB42C0A0F9500107041 /* SGVideoBannerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SGVideoBannerCollectionViewCell.swift; sourceTree = "<group>"; };
+		38A0BDB52C0A0F9500107041 /* SGVideoBannerCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SGVideoBannerCollectionViewCell.xib; sourceTree = "<group>"; };
+		38A0BDB92C0A125F00107041 /* SGVideoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SGVideoCollectionViewCell.swift; sourceTree = "<group>"; };
+		38A0BDBA2C0A125F00107041 /* SGVideoCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SGVideoCollectionViewCell.xib; sourceTree = "<group>"; };
+		38A0BDBE2C0A15ED00107041 /* SGPhysioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SGPhysioViewController.swift; sourceTree = "<group>"; };
+		38A0BDBF2C0A15ED00107041 /* SGPhysioViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SGPhysioViewController.xib; sourceTree = "<group>"; };
+		38A0BDC22C0A16B800107041 /* SGPhysioViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SGPhysioViewModel.swift; sourceTree = "<group>"; };
+		38A0BDC52C0A1A7500107041 /* SGForumsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SGForumsViewController.swift; sourceTree = "<group>"; };
+		38A0BDC62C0A1A7500107041 /* SGForumsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SGForumsViewController.xib; sourceTree = "<group>"; };
+		38A0BDC92C0A1B0300107041 /* SGForumsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SGForumsViewModel.swift; sourceTree = "<group>"; };
+		38A0BDCB2C0A1B3500107041 /* SGForumsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SGForumsModel.swift; sourceTree = "<group>"; };
+		38C436792C09F79B00B4D286 /* SGHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SGHomeViewController.swift; sourceTree = "<group>"; };
+		38C4367A2C09F79B00B4D286 /* SGHomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SGHomeViewController.xib; sourceTree = "<group>"; };
+		38C4367D2C09F82900B4D286 /* SGTitleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SGTitleCollectionViewCell.swift; sourceTree = "<group>"; };
+		38C4367E2C09F82900B4D286 /* SGTitleCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SGTitleCollectionViewCell.xib; sourceTree = "<group>"; };
+		38C436842C09F99900B4D286 /* SGSpinalCheckCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SGSpinalCheckCollectionViewCell.swift; sourceTree = "<group>"; };
+		38C436852C09F99900B4D286 /* SGSpinalCheckCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SGSpinalCheckCollectionViewCell.xib; sourceTree = "<group>"; };
+		38C436892C09FB9F00B4D286 /* SGLearnMoreCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SGLearnMoreCollectionViewCell.swift; sourceTree = "<group>"; };
+		38C4368A2C09FB9F00B4D286 /* SGLearnMoreCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SGLearnMoreCollectionViewCell.xib; sourceTree = "<group>"; };
 		38DD5C1E2BD9F02A00267909 /* MySpinalNetModel.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; path = MySpinalNetModel.mlpackage; sourceTree = "<group>"; };
 		38E477532BC2B5F40052890E /* SGCameraViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SGCameraViewModel.swift; sourceTree = "<group>"; };
 		38E477562BC2B8090052890E /* SGPreImageAnalysisModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SGPreImageAnalysisModel.swift; sourceTree = "<group>"; };
@@ -65,9 +135,11 @@
 		38E8E59E2BC2766800AFF7C7 /* SGHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SGHeaderView.swift; sourceTree = "<group>"; };
 		38E8E5A02BC2767C00AFF7C7 /* SGHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SGHeaderView.xib; sourceTree = "<group>"; };
 		38EF3FFE2BB8F4A8004DFD61 /* SGUIKitExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SGUIKitExtensions.swift; sourceTree = "<group>"; };
-		38EF40012BBB0F7D004DFD61 /* SGHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SGHomeViewController.swift; sourceTree = "<group>"; };
-		38EF40022BBB0F7D004DFD61 /* SGHomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SGHomeViewController.xib; sourceTree = "<group>"; };
+		38EF40012BBB0F7D004DFD61 /* SGHealthCheckViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SGHealthCheckViewController.swift; sourceTree = "<group>"; };
+		38EF40022BBB0F7D004DFD61 /* SGHealthCheckViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SGHealthCheckViewController.xib; sourceTree = "<group>"; };
 		38EF40052BBB1939004DFD61 /* SGTabbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SGTabbarViewController.swift; sourceTree = "<group>"; };
+		895D216ECE52EDC57501F864 /* Pods_ScolioGuru.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScolioGuru.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		952B66FE455BA9A8EB0BBB18 /* Pods-ScolioGuru.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScolioGuru.release.xcconfig"; path = "Target Support Files/Pods-ScolioGuru/Pods-ScolioGuru.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,17 +147,79 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				735A53C6324BF1CA423F9ACE /* Pods_ScolioGuru.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		18FDA95FB9032D68D1ED41F9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				895D216ECE52EDC57501F864 /* Pods_ScolioGuru.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		382C2B582C09D0470089AFBB /* HealthCheckQuestion */ = {
+			isa = PBXGroup;
+			children = (
+				382C2B5D2C09D18F0089AFBB /* Cells */,
+				382C2B592C09D09D0089AFBB /* SGHealthCheckSurveyViewController.swift */,
+				382C2B6D2C09DA0D0089AFBB /* SGHealthCheckSurveyViewModel.swift */,
+				382C2B5A2C09D09D0089AFBB /* SGHealthCheckSurveyViewController.xib */,
+			);
+			path = HealthCheckQuestion;
+			sourceTree = "<group>";
+		};
+		382C2B5D2C09D18F0089AFBB /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				382C2B682C09D8370089AFBB /* Congrats */,
+				382C2B632C09D2D50089AFBB /* SurveyOption */,
+				382C2B622C09D2C20089AFBB /* Survey */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		382C2B622C09D2C20089AFBB /* Survey */ = {
+			isa = PBXGroup;
+			children = (
+				382C2B5E2C09D1C60089AFBB /* SGSurveyTableViewCell.swift */,
+				382C2B5F2C09D1C60089AFBB /* SGSurveyTableViewCell.xib */,
+			);
+			path = Survey;
+			sourceTree = "<group>";
+		};
+		382C2B632C09D2D50089AFBB /* SurveyOption */ = {
+			isa = PBXGroup;
+			children = (
+				382C2B642C09D2EB0089AFBB /* SGSurveyOptionTableViewCell.swift */,
+				382C2B652C09D2EB0089AFBB /* SGSurveyOptionTableViewCell.xib */,
+			);
+			path = SurveyOption;
+			sourceTree = "<group>";
+		};
+		382C2B682C09D8370089AFBB /* Congrats */ = {
+			isa = PBXGroup;
+			children = (
+				382C2B692C09D8510089AFBB /* SGCongratsTableViewCell.swift */,
+				382C2B6A2C09D8510089AFBB /* SGCongratsTableViewCell.xib */,
+			);
+			path = Congrats;
+			sourceTree = "<group>";
+		};
 		38823CE22BB6893F000E7282 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				38A0BDC42C0A1A5C00107041 /* Forums */,
+				38A0BDBD2C0A15D400107041 /* Physio */,
+				38A0BDAB2C0A0D5300107041 /* LearnMore */,
+				38C436782C09F78000B4D286 /* Home */,
+				382C2B582C09D0470089AFBB /* HealthCheckQuestion */,
 				38E8E58C2BC2745B00AFF7C7 /* Camera */,
-				38EF40002BBB0F67004DFD61 /* Home */,
+				38EF40002BBB0F67004DFD61 /* HealthCheck */,
 				38823CE32BB68948000E7282 /* Tabbar */,
 			);
 			path = Features;
@@ -113,6 +247,8 @@
 			children = (
 				3890A4422BB5E2DA00CEFB05 /* ScolioGuru */,
 				3890A4412BB5E2DA00CEFB05 /* Products */,
+				BD9D71DDFBAB0BA8128B91D8 /* Pods */,
+				18FDA95FB9032D68D1ED41F9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -143,6 +279,112 @@
 			path = ScolioGuru;
 			sourceTree = "<group>";
 		};
+		38A0BDAB2C0A0D5300107041 /* LearnMore */ = {
+			isa = PBXGroup;
+			children = (
+				38A0BDB22C0A0F7400107041 /* Cells */,
+				38A0BDAC2C0A0D6E00107041 /* SGLearnMoreViewController.swift */,
+				38A0BDAD2C0A0D6E00107041 /* SGLearnMoreViewController.xib */,
+				38A0BDB02C0A0E3A00107041 /* SGLearnMoreViewModel.swift */,
+			);
+			path = LearnMore;
+			sourceTree = "<group>";
+		};
+		38A0BDB22C0A0F7400107041 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				38A0BDB82C0A124600107041 /* Video */,
+				38A0BDB32C0A0F7B00107041 /* VideoBanner */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		38A0BDB32C0A0F7B00107041 /* VideoBanner */ = {
+			isa = PBXGroup;
+			children = (
+				38A0BDB42C0A0F9500107041 /* SGVideoBannerCollectionViewCell.swift */,
+				38A0BDB52C0A0F9500107041 /* SGVideoBannerCollectionViewCell.xib */,
+			);
+			path = VideoBanner;
+			sourceTree = "<group>";
+		};
+		38A0BDB82C0A124600107041 /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				38A0BDB92C0A125F00107041 /* SGVideoCollectionViewCell.swift */,
+				38A0BDBA2C0A125F00107041 /* SGVideoCollectionViewCell.xib */,
+			);
+			path = Video;
+			sourceTree = "<group>";
+		};
+		38A0BDBD2C0A15D400107041 /* Physio */ = {
+			isa = PBXGroup;
+			children = (
+				38A0BDBE2C0A15ED00107041 /* SGPhysioViewController.swift */,
+				38A0BDBF2C0A15ED00107041 /* SGPhysioViewController.xib */,
+				38A0BDC22C0A16B800107041 /* SGPhysioViewModel.swift */,
+			);
+			path = Physio;
+			sourceTree = "<group>";
+		};
+		38A0BDC42C0A1A5C00107041 /* Forums */ = {
+			isa = PBXGroup;
+			children = (
+				38A0BDC52C0A1A7500107041 /* SGForumsViewController.swift */,
+				38A0BDC62C0A1A7500107041 /* SGForumsViewController.xib */,
+				38A0BDC92C0A1B0300107041 /* SGForumsViewModel.swift */,
+			);
+			path = Forums;
+			sourceTree = "<group>";
+		};
+		38C436782C09F78000B4D286 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				38C436812C09F83000B4D286 /* Cells */,
+				38C436792C09F79B00B4D286 /* SGHomeViewController.swift */,
+				38C4367A2C09F79B00B4D286 /* SGHomeViewController.xib */,
+				38A0BDA72C0A02BD00107041 /* SGHomeViewModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		38C436812C09F83000B4D286 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				38C436882C09FB6D00B4D286 /* LearnMore */,
+				38C436832C09F98300B4D286 /* SpinalCheck */,
+				38C436822C09F83900B4D286 /* Title */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		38C436822C09F83900B4D286 /* Title */ = {
+			isa = PBXGroup;
+			children = (
+				38C4367D2C09F82900B4D286 /* SGTitleCollectionViewCell.swift */,
+				38C4367E2C09F82900B4D286 /* SGTitleCollectionViewCell.xib */,
+			);
+			path = Title;
+			sourceTree = "<group>";
+		};
+		38C436832C09F98300B4D286 /* SpinalCheck */ = {
+			isa = PBXGroup;
+			children = (
+				38C436842C09F99900B4D286 /* SGSpinalCheckCollectionViewCell.swift */,
+				38C436852C09F99900B4D286 /* SGSpinalCheckCollectionViewCell.xib */,
+			);
+			path = SpinalCheck;
+			sourceTree = "<group>";
+		};
+		38C436882C09FB6D00B4D286 /* LearnMore */ = {
+			isa = PBXGroup;
+			children = (
+				38C436892C09FB9F00B4D286 /* SGLearnMoreCollectionViewCell.swift */,
+				38C4368A2C09FB9F00B4D286 /* SGLearnMoreCollectionViewCell.xib */,
+			);
+			path = LearnMore;
+			sourceTree = "<group>";
+		};
 		38E477552BC2B7B60052890E /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -150,6 +392,8 @@
 				38E4775F2BC2CED80052890E /* SGErrorModel.swift */,
 				388442BD2BC36D880076C7B3 /* SGCameraState.swift */,
 				388442BF2BC36DB30076C7B3 /* SGCameraView.swift */,
+				38A0BDA92C0A0A1D00107041 /* SGTabModel.swift */,
+				38A0BDCB2C0A1B3500107041 /* SGForumsModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -208,17 +452,27 @@
 				38EF3FFE2BB8F4A8004DFD61 /* SGUIKitExtensions.swift */,
 				387DE8122BC27D7B00114D02 /* SGUIColorExtension.swift */,
 				387DE8142BC280AF00114D02 /* SGUIViewExtension.swift */,
+				381ACD382C113BA10097E267 /* SGUIImageExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		38EF40002BBB0F67004DFD61 /* Home */ = {
+		38EF40002BBB0F67004DFD61 /* HealthCheck */ = {
 			isa = PBXGroup;
 			children = (
-				38EF40012BBB0F7D004DFD61 /* SGHomeViewController.swift */,
-				38EF40022BBB0F7D004DFD61 /* SGHomeViewController.xib */,
+				38EF40012BBB0F7D004DFD61 /* SGHealthCheckViewController.swift */,
+				38EF40022BBB0F7D004DFD61 /* SGHealthCheckViewController.xib */,
 			);
-			path = Home;
+			path = HealthCheck;
+			sourceTree = "<group>";
+		};
+		BD9D71DDFBAB0BA8128B91D8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0A23C096874A9488137EE1C8 /* Pods-ScolioGuru.debug.xcconfig */,
+				952B66FE455BA9A8EB0BBB18 /* Pods-ScolioGuru.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,9 +482,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3890A4542BB5E2DE00CEFB05 /* Build configuration list for PBXNativeTarget "ScolioGuru" */;
 			buildPhases = (
+				E5F14E5B61819CE6DEE555CC /* [CP] Check Pods Manifest.lock */,
 				3890A43C2BB5E2DA00CEFB05 /* Sources */,
 				3890A43D2BB5E2DA00CEFB05 /* Frameworks */,
 				3890A43E2BB5E2DA00CEFB05 /* Resources */,
+				B74D7D9A1DE2C12EC0077F2B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -279,16 +535,71 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38A0BDC12C0A15ED00107041 /* SGPhysioViewController.xib in Resources */,
+				38A0BDAF2C0A0D6E00107041 /* SGLearnMoreViewController.xib in Resources */,
 				3890A4502BB5E2DE00CEFB05 /* LaunchScreen.storyboard in Resources */,
+				38A0BDB72C0A0F9500107041 /* SGVideoBannerCollectionViewCell.xib in Resources */,
+				38C436802C09F82900B4D286 /* SGTitleCollectionViewCell.xib in Resources */,
 				38E4775C2BC2BB130052890E /* SGParameterCheckView.xib in Resources */,
 				38E8E5902BC2757500AFF7C7 /* SGCameraViewController.xib in Resources */,
+				38A0BDBC2C0A125F00107041 /* SGVideoCollectionViewCell.xib in Resources */,
+				38C436872C09F99900B4D286 /* SGSpinalCheckCollectionViewCell.xib in Resources */,
 				3890A44D2BB5E2DE00CEFB05 /* Assets.xcassets in Resources */,
+				38C4368C2C09FB9F00B4D286 /* SGLearnMoreCollectionViewCell.xib in Resources */,
+				382C2B5C2C09D09D0089AFBB /* SGHealthCheckSurveyViewController.xib in Resources */,
+				382C2B612C09D1C60089AFBB /* SGSurveyTableViewCell.xib in Resources */,
+				382C2B6C2C09D8510089AFBB /* SGCongratsTableViewCell.xib in Resources */,
+				38A0BDC82C0A1A7500107041 /* SGForumsViewController.xib in Resources */,
 				38E8E5A12BC2767C00AFF7C7 /* SGHeaderView.xib in Resources */,
-				38EF40042BBB0F7D004DFD61 /* SGHomeViewController.xib in Resources */,
+				38C4367C2C09F79C00B4D286 /* SGHomeViewController.xib in Resources */,
+				38EF40042BBB0F7D004DFD61 /* SGHealthCheckViewController.xib in Resources */,
+				382C2B672C09D2EB0089AFBB /* SGSurveyOptionTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B74D7D9A1DE2C12EC0077F2B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ScolioGuru/Pods-ScolioGuru-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ScolioGuru/Pods-ScolioGuru-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ScolioGuru/Pods-ScolioGuru-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E5F14E5B61819CE6DEE555CC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ScolioGuru-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3890A43C2BB5E2DA00CEFB05 /* Sources */ = {
@@ -296,27 +607,48 @@
 			buildActionMask = 2147483647;
 			files = (
 				3890A4482BB5E2DA00CEFB05 /* ViewController.swift in Sources */,
+				382C2B602C09D1C60089AFBB /* SGSurveyTableViewCell.swift in Sources */,
 				387DE8152BC280AF00114D02 /* SGUIViewExtension.swift in Sources */,
+				38A0BDCC2C0A1B3500107041 /* SGForumsModel.swift in Sources */,
 				38DD5C1F2BD9F02C00267909 /* MySpinalNetModel.mlpackage in Sources */,
 				38EF3FFF2BB8F4A8004DFD61 /* SGUIKitExtensions.swift in Sources */,
+				382C2B662C09D2EB0089AFBB /* SGSurveyOptionTableViewCell.swift in Sources */,
+				38A0BDB62C0A0F9500107041 /* SGVideoBannerCollectionViewCell.swift in Sources */,
 				388442C32BC3D1A60076C7B3 /* SGConstants.swift in Sources */,
 				38E477542BC2B5F40052890E /* SGCameraViewModel.swift in Sources */,
 				38E4775A2BC2BB040052890E /* SGParameterCheckView.swift in Sources */,
 				387DE8172BC28C1800114D02 /* SelfDesigningView.swift in Sources */,
 				388442BE2BC36D880076C7B3 /* SGCameraState.swift in Sources */,
+				38A0BDC02C0A15ED00107041 /* SGPhysioViewController.swift in Sources */,
 				387DE8112BC279DA00114D02 /* SGButton.swift in Sources */,
-				38EF40032BBB0F7D004DFD61 /* SGHomeViewController.swift in Sources */,
+				38EF40032BBB0F7D004DFD61 /* SGHealthCheckViewController.swift in Sources */,
 				38E8E58F2BC2757500AFF7C7 /* SGCameraViewController.swift in Sources */,
+				382C2B5B2C09D09D0089AFBB /* SGHealthCheckSurveyViewController.swift in Sources */,
+				38C4367B2C09F79B00B4D286 /* SGHomeViewController.swift in Sources */,
 				3890A4442BB5E2DA00CEFB05 /* AppDelegate.swift in Sources */,
+				38A0BDCA2C0A1B0300107041 /* SGForumsViewModel.swift in Sources */,
+				382C2B6B2C09D8510089AFBB /* SGCongratsTableViewCell.swift in Sources */,
+				38C4368B2C09FB9F00B4D286 /* SGLearnMoreCollectionViewCell.swift in Sources */,
 				38E8E59F2BC2766800AFF7C7 /* SGHeaderView.swift in Sources */,
 				387DE8132BC27D7B00114D02 /* SGUIColorExtension.swift in Sources */,
 				3890A4462BB5E2DA00CEFB05 /* SceneDelegate.swift in Sources */,
 				38EF40072BBB1939004DFD61 /* SGTabbarViewController.swift in Sources */,
 				388442C02BC36DB30076C7B3 /* SGCameraView.swift in Sources */,
+				38A0BDBB2C0A125F00107041 /* SGVideoCollectionViewCell.swift in Sources */,
+				38A0BDC32C0A16B800107041 /* SGPhysioViewModel.swift in Sources */,
+				38A0BDC72C0A1A7500107041 /* SGForumsViewController.swift in Sources */,
+				38C4367F2C09F82900B4D286 /* SGTitleCollectionViewCell.swift in Sources */,
+				38C436862C09F99900B4D286 /* SGSpinalCheckCollectionViewCell.swift in Sources */,
+				38A0BDAE2C0A0D6E00107041 /* SGLearnMoreViewController.swift in Sources */,
+				382C2B6E2C09DA0D0089AFBB /* SGHealthCheckSurveyViewModel.swift in Sources */,
+				381ACD392C113BA10097E267 /* SGUIImageExtensions.swift in Sources */,
 				38E477572BC2B8090052890E /* SGPreImageAnalysisModel.swift in Sources */,
 				388442C52BC3DD540076C7B3 /* SGCommonTypeAlias.swift in Sources */,
 				38E477602BC2CED80052890E /* SGErrorModel.swift in Sources */,
 				38E4775E2BC2BD7F0052890E /* SGParameterCheckViewModel.swift in Sources */,
+				38A0BDAA2C0A0A1D00107041 /* SGTabModel.swift in Sources */,
+				38A0BDB12C0A0E3A00107041 /* SGLearnMoreViewModel.swift in Sources */,
+				38A0BDA82C0A02BD00107041 /* SGHomeViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -371,7 +703,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -434,7 +766,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -455,6 +787,7 @@
 		};
 		3890A4552BB5E2DE00CEFB05 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A23C096874A9488137EE1C8 /* Pods-ScolioGuru.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -483,6 +816,7 @@
 		};
 		3890A4562BB5E2DE00CEFB05 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 952B66FE455BA9A8EB0BBB18 /* Pods-ScolioGuru.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

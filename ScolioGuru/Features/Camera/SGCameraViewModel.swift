@@ -128,4 +128,89 @@ final class SGCameraViewModel {
             currentViewNumber += 1
         }
     }
+    
+    func imageToCVPixelBuffer(from image: UIImage) -> CVPixelBuffer? {
+      let attrs = [kCVPixelBufferCGImageCompatibilityKey: kCFBooleanTrue, kCVPixelBufferCGBitmapContextCompatibilityKey: kCFBooleanTrue] as CFDictionary
+      var pixelBuffer : CVPixelBuffer?
+      let status = CVPixelBufferCreate(kCFAllocatorDefault, Int(image.size.width), Int(image.size.height), kCVPixelFormatType_32ARGB, attrs, &pixelBuffer)
+      guard (status == kCVReturnSuccess) else {
+        return nil
+      }
+
+      CVPixelBufferLockBaseAddress(pixelBuffer!, CVPixelBufferLockFlags(rawValue: 0))
+      let pixelData = CVPixelBufferGetBaseAddress(pixelBuffer!)
+
+      let rgbColorSpace = CGColorSpaceCreateDeviceRGB()
+      let context = CGContext(data: pixelData, width: Int(image.size.width), height: Int(image.size.height), bitsPerComponent: 8, bytesPerRow: CVPixelBufferGetBytesPerRow(pixelBuffer!), space: rgbColorSpace, bitmapInfo: CGImageAlphaInfo.noneSkipFirst.rawValue)
+
+      context?.translateBy(x: 0, y: image.size.height)
+      context?.scaleBy(x: 1.0, y: -1.0)
+
+      UIGraphicsPushContext(context!)
+      image.draw(in: CGRect(x: 0, y: 0, width: image.size.width, height: image.size.height))
+      UIGraphicsPopContext()
+      CVPixelBufferUnlockBaseAddress(pixelBuffer!, CVPixelBufferLockFlags(rawValue: 0))
+
+      return pixelBuffer
+    }
+    
+    func resizeAndConvertToPixelBuffer(image: UIImage, percentage: CGFloat) -> CVPixelBuffer? {
+        let width = Int(image.size.width * percentage)
+        let height = Int(image.size.height * percentage)
+        let resizedImage = resizeImage(image: image, targetSize: CGSize(width: 720, height: 720))
+        
+        guard let cgImage = resizedImage?.cgImage else {
+            return nil
+        }
+
+        var pixelBuffer: CVPixelBuffer?
+        let attrs = [
+            kCVPixelBufferCGImageCompatibilityKey: kCFBooleanTrue,
+            kCVPixelBufferCGBitmapContextCompatibilityKey: kCFBooleanTrue
+        ] as CFDictionary
+
+        let status = CVPixelBufferCreate(kCFAllocatorDefault, width, height, kCVPixelFormatType_32ARGB, attrs, &pixelBuffer)
+        guard let finalPixelBuffer = pixelBuffer, status == kCVReturnSuccess else {
+            return nil
+        }
+
+        let ciImage = CIImage(cgImage: cgImage)
+        let context = CIContext()
+        context.render(ciImage, to: finalPixelBuffer)
+
+        return finalPixelBuffer
+    }
+    
+    func resizeImage(image: UIImage, targetSize: CGSize) -> UIImage? {
+        let size = image.size
+        var scale: CGFloat
+
+        if size.width > size.height {
+            scale = targetSize.width / size.width
+        } else {
+            scale = targetSize.height / size.height
+        }
+
+        let width = size.width * scale
+        let height = size.height * scale
+
+        let x = (targetSize.width - width) / 2.0
+        let y = (targetSize.height - height) / 2.0
+
+        let rect = CGRect(x: x, y: y, width: width, height: height)
+
+        UIGraphicsBeginImageContextWithOptions(targetSize, false, 1.0)
+        defer { UIGraphicsEndImageContext() }
+
+        guard let context = UIGraphicsGetCurrentContext() else {
+            return nil
+        }
+
+        context.setFillColor(UIColor.clear.cgColor)
+        UIRectFill(CGRect(origin: .zero, size: targetSize))
+
+        image.draw(in: rect)
+
+        return UIGraphicsGetImageFromCurrentImageContext()
+    }
 }

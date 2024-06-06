@@ -2,52 +2,100 @@
 //  SGHomeViewController.swift
 //  ScolioGuru
 //
-//  Created by Priyank Ahuja on 4/1/24.
+//  Created by Priyank Ahuja on 5/31/24.
 //
 
 import UIKit
-import AVKit
-import CoreML
 
-final class SGHomeViewController: UIViewController {
+class SGHomeViewController: UIViewController {
     
     @IBOutlet weak var headerBackgroundView: UIView!
-    @IBOutlet weak var headerView: SGHeaderView!
-    @IBOutlet weak var letsStartButton: UIButton!
+    @IBOutlet weak var collectionView: UICollectionView!
     
-    var model: MySpinalNetModel?
+    let model: SGHomeViewModel
+    
+    init(model: SGHomeViewModel) {
+        self.model = model
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupInterface()
-        // Do any additional setup after loading the view.
-    }
-    
-    private func setupInterface() {
         self.navigationController?.isNavigationBarHidden = true
-        self.tabBarController?.tabBar.isHidden = false
-        letsStartButton.setTitle("Let's Start", for: .normal)
-        self.headerBackgroundView.addShadow()
+        collectionView.register(UINib(nibName: "SGTitleCollectionViewCell", bundle: .main), forCellWithReuseIdentifier: "SGTitleCollectionViewCell")
+        collectionView.register(UINib(nibName: "SGLearnMoreCollectionViewCell", bundle: .main), forCellWithReuseIdentifier: "SGLearnMoreCollectionViewCell")
+        collectionView.register(UINib(nibName: "SGSpinalCheckCollectionViewCell", bundle: .main), forCellWithReuseIdentifier: "SGSpinalCheckCollectionViewCell")
+        
+        headerBackgroundView.addShadow()
+    }
+}
+
+extension SGHomeViewController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 6
     }
     
-    @IBAction func letsStartButtonAction(_ sender: Any) {
-        AVCaptureDevice.requestAccess(for: AVMediaType.video) { response in
-            if response {
-                //access granted
-                DispatchQueue.main.async {
-                    let model = SGCameraViewModel()
-                    let cameraViewController = SGCameraViewController(model: model)
-                    cameraViewController.backButtonClosure = { [weak self] in
-                        guard let self else { return }
-                        self.navigationController?.popViewController(animated: true)
-                        self.tabBarController?.tabBar.isHidden = false
-                    }
-                    self.navigationController?.pushViewController(cameraViewController, animated: true)
-                }
-            } else {
-                
-            }
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        switch indexPath.row {
+        case 0:
+            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "SGTitleCollectionViewCell", for: indexPath) as? SGTitleCollectionViewCell else {return UICollectionViewCell()}
+            cell.setupInterface(title: model.title, description: model.description)
+            return cell
+        case 1:
+            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "SGSpinalCheckCollectionViewCell", for: indexPath) as? SGSpinalCheckCollectionViewCell else {return UICollectionViewCell()}
+            cell.delegate = self
+            return cell
+        default:
+            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "SGLearnMoreCollectionViewCell", for: indexPath) as? SGLearnMoreCollectionViewCell else {return UICollectionViewCell()}
+            cell.setupInterface(model: model.tabs[indexPath.row-2])
+            return cell
+        }
+     
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        switch indexPath.row {
+        case 0:
+            return CGSize(width: UIScreen.main.bounds.size.width, height: 150)
+        case 1:
+            return CGSize(width: UIScreen.main.bounds.size.width, height: 160)
+        default:
+            return CGSize(width: UIScreen.main.bounds.size.width/2 - 5, height: 165)
         }
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        switch indexPath.row {
+        case 2:
+            let model = SGLearnMoreViewModel()
+            let learnMoreControlelr = SGLearnMoreViewController(model: model)
+            
+            self.navigationController?.pushViewController(learnMoreControlelr, animated: true)
+        case 3:
+            let model = SGPhysioViewModel()
+            let physioControlelr = SGPhysioViewController(model: model)
+            
+            self.navigationController?.pushViewController(physioControlelr, animated: true)
+        case 4:
+            let model = SGForumsViewModel()
+            let forumsControlelr = SGForumsViewController(model: model)
+            
+            self.navigationController?.pushViewController(forumsControlelr, animated: true)
+        default:
+            return
+        }
+    }
+    
+}
+
+extension SGHomeViewController: SGSpinalCheckCollectionViewCellDelegate {
+    func spinalCheckButtonPressed() {
+        let spinalCheckController = SGHealthCheckViewController()
+        
+        self.navigationController?.pushViewController(spinalCheckController, animated: true)
+    }
 }

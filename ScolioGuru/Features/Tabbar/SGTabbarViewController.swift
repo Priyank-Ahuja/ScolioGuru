@@ -79,10 +79,17 @@ class SGTabbarViewController: UITabBarController {
     }
     
     private func setupTabs () {
-        let home = self.createNav(with: "Home", and: UIImage(named: "home-tab-icon"), vc: SGHomeViewController())
+        let homeModel = SGHomeViewModel()
+        let resourcesModel = SGLearnMoreViewModel()
+        let physioModel = SGPhysioViewModel()
+        let forumsModel = SGForumsViewModel()
         
+        let home = self.createNav(with: "Home", and: UIImage(named: "home-tab-icon"), vc: SGHomeViewController(model: homeModel))
+        let resources = self.createNav(with: "Resources", and: UIImage(named: "resources-tab-icon"), vc: SGLearnMoreViewController(model: resourcesModel))
+        let physio = self.createNav(with: "Physio", and: UIImage(named: "physio-tab-icon"), vc: SGPhysioViewController(model: physioModel))
+        let forums = self.createNav(with: "Forums", and: UIImage(named: "forums-tab-icon"), vc: SGForumsViewController(model: forumsModel))
         
-        self.setViewControllers ([home], animated: true)
+        self.setViewControllers ([resources, physio, home, forums], animated: true)
     }
     
     private

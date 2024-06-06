@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SGPhysioViewController" customModule="ScolioGuru" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="GFw-hX-uqf" id="uIk-al-w5d"/>
+                <outlet property="headerBackgroundView" destination="wa8-ek-meM" id="8M3-Gn-s8u"/>
+                <outlet property="headerView" destination="Szc-sZ-OSS" id="6uH-o0-xth"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="GFw-hX-uqf">
+                    <rect key="frame" x="0.0" y="94" width="393" height="758"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="5fe-X8-jHN">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="kYW-Q1-Tvl"/>
+                        <outlet property="delegate" destination="-1" id="aPz-m9-Qtb"/>
+                    </connections>
+                </collectionView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wa8-ek-meM">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="94"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Szc-sZ-OSS" customClass="SGHeaderView" customModule="ScolioGuru" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="49" width="393" height="45"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="DyO-Yx-wXO"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="45" id="lHs-vB-YRH"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Szc-sZ-OSS" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="-10" id="5Vs-HJ-DHa"/>
+                <constraint firstItem="wa8-ek-meM" firstAttribute="bottom" secondItem="Szc-sZ-OSS" secondAttribute="bottom" id="7b2-tc-PwF"/>
+                <constraint firstAttribute="bottom" secondItem="GFw-hX-uqf" secondAttribute="bottom" id="9o6-zQ-0No"/>
+                <constraint firstItem="GFw-hX-uqf" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Ff4-VV-A8i"/>
+                <constraint firstItem="wa8-ek-meM" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="LVj-Ur-MuW"/>
+                <constraint firstItem="GFw-hX-uqf" firstAttribute="top" secondItem="wa8-ek-meM" secondAttribute="bottom" id="MW8-va-2fh"/>
+                <constraint firstItem="wa8-ek-meM" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="NDu-Qa-ZAH"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Szc-sZ-OSS" secondAttribute="trailing" id="RdA-xm-muA"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="GFw-hX-uqf" secondAttribute="trailing" id="XEw-Lj-n3T"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="wa8-ek-meM" secondAttribute="trailing" id="diy-Sg-wba"/>
+                <constraint firstItem="Szc-sZ-OSS" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="lsW-jg-x61"/>
+            </constraints>
+            <point key="canvasLocation" x="-19" y="20"/>
+        </view>
+    </objects>
+</document>
