@@ -73,12 +73,12 @@ extension SGForumsViewController: UICollectionViewDataSource, UICollectionViewDe
             let model = SGLearnMoreViewModel()
             let learnMoreControlelr = SGLearnMoreViewController(model: model)
             
-            self.navigationController?.pushViewController(learnMoreControlelr, animated: true)
+            //self.navigationController?.pushViewController(learnMoreControlelr, animated: true)
         case 2:
             let model = SGPhysioViewModel()
             let physioControlelr = SGPhysioViewController(model: model)
             
-            self.navigationController?.pushViewController(physioControlelr, animated: true)
+            //self.navigationController?.pushViewController(physioControlelr, animated: true)
         default:
             return
         }
