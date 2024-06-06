@@ -6,11 +6,11 @@
 //
 
 import UIKit
-import YouTubePlayer
+//import YouTubePlayer
 
 class SGVideoBannerCollectionViewCell: UICollectionViewCell {
 
-    @IBOutlet weak var youtubePlayerView: YouTubePlayerView!
+    @IBOutlet weak var youtubePlayerView: UIView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -19,7 +19,7 @@ class SGVideoBannerCollectionViewCell: UICollectionViewCell {
     
     func setupVideo(url: String) {
         guard let myVideoURL = URL(string: url) else {return}
-        youtubePlayerView.loadVideoURL(myVideoURL)
+        //youtubePlayerView.loadVideoURL(myVideoURL)
     }
 
 }

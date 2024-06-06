@@ -69,11 +69,9 @@
 		38EF40032BBB0F7D004DFD61 /* SGHealthCheckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38EF40012BBB0F7D004DFD61 /* SGHealthCheckViewController.swift */; };
 		38EF40042BBB0F7D004DFD61 /* SGHealthCheckViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38EF40022BBB0F7D004DFD61 /* SGHealthCheckViewController.xib */; };
 		38EF40072BBB1939004DFD61 /* SGTabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38EF40052BBB1939004DFD61 /* SGTabbarViewController.swift */; };
-		735A53C6324BF1CA423F9ACE /* Pods_ScolioGuru.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 895D216ECE52EDC57501F864 /* Pods_ScolioGuru.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0A23C096874A9488137EE1C8 /* Pods-ScolioGuru.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScolioGuru.debug.xcconfig"; path = "Target Support Files/Pods-ScolioGuru/Pods-ScolioGuru.debug.xcconfig"; sourceTree = "<group>"; };
 		381ACD382C113BA10097E267 /* SGUIImageExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SGUIImageExtensions.swift; sourceTree = "<group>"; };
 		382C2B592C09D09D0089AFBB /* SGHealthCheckSurveyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SGHealthCheckSurveyViewController.swift; sourceTree = "<group>"; };
 		382C2B5A2C09D09D0089AFBB /* SGHealthCheckSurveyViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SGHealthCheckSurveyViewController.xib; sourceTree = "<group>"; };
@@ -138,8 +136,6 @@
 		38EF40012BBB0F7D004DFD61 /* SGHealthCheckViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SGHealthCheckViewController.swift; sourceTree = "<group>"; };
 		38EF40022BBB0F7D004DFD61 /* SGHealthCheckViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SGHealthCheckViewController.xib; sourceTree = "<group>"; };
 		38EF40052BBB1939004DFD61 /* SGTabbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SGTabbarViewController.swift; sourceTree = "<group>"; };
-		895D216ECE52EDC57501F864 /* Pods_ScolioGuru.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScolioGuru.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		952B66FE455BA9A8EB0BBB18 /* Pods-ScolioGuru.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScolioGuru.release.xcconfig"; path = "Target Support Files/Pods-ScolioGuru/Pods-ScolioGuru.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,21 +143,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				735A53C6324BF1CA423F9ACE /* Pods_ScolioGuru.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		18FDA95FB9032D68D1ED41F9 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				895D216ECE52EDC57501F864 /* Pods_ScolioGuru.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		382C2B582C09D0470089AFBB /* HealthCheckQuestion */ = {
 			isa = PBXGroup;
 			children = (
@@ -248,7 +235,6 @@
 				3890A4422BB5E2DA00CEFB05 /* ScolioGuru */,
 				3890A4412BB5E2DA00CEFB05 /* Products */,
 				BD9D71DDFBAB0BA8128B91D8 /* Pods */,
-				18FDA95FB9032D68D1ED41F9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -469,8 +455,6 @@
 		BD9D71DDFBAB0BA8128B91D8 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				0A23C096874A9488137EE1C8 /* Pods-ScolioGuru.debug.xcconfig */,
-				952B66FE455BA9A8EB0BBB18 /* Pods-ScolioGuru.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -482,11 +466,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3890A4542BB5E2DE00CEFB05 /* Build configuration list for PBXNativeTarget "ScolioGuru" */;
 			buildPhases = (
-				E5F14E5B61819CE6DEE555CC /* [CP] Check Pods Manifest.lock */,
 				3890A43C2BB5E2DA00CEFB05 /* Sources */,
 				3890A43D2BB5E2DA00CEFB05 /* Frameworks */,
 				3890A43E2BB5E2DA00CEFB05 /* Resources */,
-				B74D7D9A1DE2C12EC0077F2B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -558,48 +540,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		B74D7D9A1DE2C12EC0077F2B /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ScolioGuru/Pods-ScolioGuru-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ScolioGuru/Pods-ScolioGuru-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ScolioGuru/Pods-ScolioGuru-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E5F14E5B61819CE6DEE555CC /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ScolioGuru-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3890A43C2BB5E2DA00CEFB05 /* Sources */ = {
@@ -787,7 +727,6 @@
 		};
 		3890A4552BB5E2DE00CEFB05 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0A23C096874A9488137EE1C8 /* Pods-ScolioGuru.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -816,7 +755,6 @@
 		};
 		3890A4562BB5E2DE00CEFB05 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 952B66FE455BA9A8EB0BBB18 /* Pods-ScolioGuru.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

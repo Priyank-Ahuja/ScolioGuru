@@ -11,14 +11,6 @@ class SGTabbarViewController: UITabBarController {
     
     var customTabBarView = UIView(frame: .zero)
     
-    //    override func viewDidLoad() {
-    //        super.viewDidLoad()
-    //        setupTabs()
-    //
-    //        self.tabBar.barTintColor = .white
-    //        self.tabBar.tintColor = .black
-    //    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
        
@@ -84,12 +76,16 @@ class SGTabbarViewController: UITabBarController {
         let physioModel = SGPhysioViewModel()
         let forumsModel = SGForumsViewModel()
         
+        let healthCheck = self.createNav(with: "Home", and: UIImage(named: "home-tab-icon"), vc: SGHealthCheckViewController())
+        
         let home = self.createNav(with: "Home", and: UIImage(named: "home-tab-icon"), vc: SGHomeViewController(model: homeModel))
         let resources = self.createNav(with: "Resources", and: UIImage(named: "resources-tab-icon"), vc: SGLearnMoreViewController(model: resourcesModel))
         let physio = self.createNav(with: "Physio", and: UIImage(named: "physio-tab-icon"), vc: SGPhysioViewController(model: physioModel))
         let forums = self.createNav(with: "Forums", and: UIImage(named: "forums-tab-icon"), vc: SGForumsViewController(model: forumsModel))
         
-        self.setViewControllers ([resources, physio, home, forums], animated: true)
+        self.setViewControllers ([healthCheck], animated: true)
+        //self.setViewControllers ([resources, physio, home, forums], animated: true)
+        //self.selectedIndex = 2
     }
     
     private
